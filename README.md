@@ -10,7 +10,7 @@
 
 ### Data flow
 [index.js](index.js) creates an app and adds the routes defined in [routers](routers/userRouter.js).
-The routes receive HTTP requests from the user and call functions defined in [controllers](controllers/users/index.js) which call functions in the [service](services/users/index.js) which then call functions in the [repository](repositories/users/index.js) which uses the database defined in index.js to execute a task (post, get, put, or delete).
+The routes receive HTTP requests from the user and call functions defined in [controllers](controllers/userControllers.js) which call functions in the [service](services/userService.js) which then call functions in the [repository](repositories/userRepository.js) which uses the database defined in index.js to execute a task (post, get, put, or delete).
 
 ### Error handling and recovery
 If an ID parameter does not exist in the database, 404/400 is returned.
