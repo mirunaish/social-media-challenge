@@ -4,9 +4,9 @@
 ### API routes
 * POST http://localhost:5000/users - saves the user in the request body to the database, returns the user or `null` if not found
 * GET http://localhost:5000/users - returns an array of all users
-* GET http://localhost:5000/users/<user-id> - returns the specified user, or `null` if not found
-* PUT http://localhost:5000/users/<user-id> - updates the user with id with information from the request body, returns the updated user or `null` if error
-* DELETE http://localhost:5000/users/<user-id> - deletes the specified user, returns the user if successful and `null` if user not found
+* GET http://localhost:5000/users/user_id - returns the specified user, or `null` if not found
+* PUT http://localhost:5000/users/user_id - updates the user with id with information from the request body, returns the updated user or `null` if error
+* DELETE http://localhost:5000/users/user_id - deletes the specified user, returns the user if successful and `null` if user not found
 
 ### Data flow
 [index.js](index.js) creates an app and adds the routes defined in [routers](routers/userRouter.js).
